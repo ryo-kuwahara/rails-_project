@@ -1,0 +1,11 @@
+<h1>投稿一覧</h1>
+<hr>
+<% @posts.each do |post|%>
+<p><a href="/posts/<%= post.id %>"><%= post.id %>:<%= post.name%></a></p>
+<%= post.content %>
+<hr>
+
+<% end %>
+<a href="/posts/new" class="btn btn-primary">新しく投稿する</a>
+
+
